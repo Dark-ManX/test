@@ -1,0 +1,336 @@
+{
+  "result": [
+    {
+      "scriptId": "1008",
+      "url": "file:///Users/serhiiokuniev/test_task/src/__test__/pages/AuthPage.test.tsx",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 2188, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 13, "endOffset": 2188, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 773, "endOffset": 1170, "count": 1 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1276",
+      "url": "file:///Users/serhiiokuniev/test_task/src/features/components/AuthForm/index.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 851, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 13, "endOffset": 851, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "get",
+          "ranges": [{ "startOffset": 419, "endOffset": 464, "count": 1 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1277",
+      "url": "file:///Users/serhiiokuniev/test_task/src/features/components/AuthForm/AuthForm.tsx",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 5956, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 13, "endOffset": 5956, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "AuthForm",
+          "ranges": [{ "startOffset": 955, "endOffset": 3074, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "onChange",
+          "ranges": [{ "startOffset": 1324, "endOffset": 1372, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "onChange",
+          "ranges": [{ "startOffset": 1786, "endOffset": 1837, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "onClick",
+          "ranges": [{ "startOffset": 2340, "endOffset": 2514, "count": 0 }],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "1278",
+      "url": "file:///Users/serhiiokuniev/test_task/src/core/lib/authClass.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 4068, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 13, "endOffset": 4068, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "Auth",
+          "ranges": [{ "startOffset": 582, "endOffset": 780, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "getEmail",
+          "ranges": [{ "startOffset": 783, "endOffset": 822, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "getPassword",
+          "ranges": [{ "startOffset": 825, "endOffset": 870, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "changeEmail",
+          "ranges": [{ "startOffset": 873, "endOffset": 956, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "changePassword",
+          "ranges": [{ "startOffset": 959, "endOffset": 1048, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "getUser",
+          "ranges": [{ "startOffset": 1051, "endOffset": 1321, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "get",
+          "ranges": [{ "startOffset": 1416, "endOffset": 1436, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "get",
+          "ranges": [{ "startOffset": 1557, "endOffset": 1577, "count": 2 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1735",
+      "url": "file:///Users/serhiiokuniev/test_task/src/core/configs/index.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 2425, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 13, "endOffset": 2425, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "get",
+          "ranges": [{ "startOffset": 618, "endOffset": 641, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "next",
+          "ranges": [{ "startOffset": 677, "endOffset": 841, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "error",
+          "ranges": [{ "startOffset": 852, "endOffset": 909, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "complete",
+          "ranges": [{ "startOffset": 923, "endOffset": 980, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "get",
+          "ranges": [{ "startOffset": 1085, "endOffset": 1114, "count": 0 }],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "1739",
+      "url": "file:///Users/serhiiokuniev/test_task/src/core/lib/userClass.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 2574, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 13, "endOffset": 2574, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "User",
+          "ranges": [{ "startOffset": 582, "endOffset": 681, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "getUser",
+          "ranges": [{ "startOffset": 684, "endOffset": 951, "count": 0 }],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "get",
+          "ranges": [{ "startOffset": 1071, "endOffset": 1091, "count": 0 }],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "1740",
+      "url": "file:///Users/serhiiokuniev/test_task/src/shared/components/Button/index.tsx",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 841, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 13, "endOffset": 841, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "get",
+          "ranges": [{ "startOffset": 413, "endOffset": 458, "count": 1 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1741",
+      "url": "file:///Users/serhiiokuniev/test_task/src/shared/components/Button/Button.tsx",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 1537, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 13, "endOffset": 1537, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "Button",
+          "ranges": [{ "startOffset": 330, "endOffset": 637, "count": 1 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1742",
+      "url": "file:///Users/serhiiokuniev/test_task/src/shared/components/Card/index.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 829, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 13, "endOffset": 829, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "get",
+          "ranges": [{ "startOffset": 409, "endOffset": 454, "count": 1 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1743",
+      "url": "file:///Users/serhiiokuniev/test_task/src/shared/components/Card/Card.tsx",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 1487, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 13, "endOffset": 1487, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "Card",
+          "ranges": [{ "startOffset": 328, "endOffset": 637, "count": 1 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1744",
+      "url": "file:///Users/serhiiokuniev/test_task/src/shared/components/Input/index.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 831, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 13, "endOffset": 831, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "get",
+          "ranges": [{ "startOffset": 411, "endOffset": 456, "count": 2 }],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "1745",
+      "url": "file:///Users/serhiiokuniev/test_task/src/shared/components/Input/Input.tsx",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 0, "endOffset": 1772, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [{ "startOffset": 13, "endOffset": 1772, "count": 1 }],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "Input",
+          "ranges": [{ "startOffset": 329, "endOffset": 853, "count": 2 }],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  ]
+}
