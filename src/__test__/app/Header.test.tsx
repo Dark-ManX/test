@@ -21,4 +21,13 @@ describe("Header tests", () => {
 
     expect(screen.getByTestId("auth-form")).toBeDefined();
   });
+
+  it("check redirect to /", async () => {
+    render(<Header data={navigation} />);
+
+    const user = userEvent.setup();
+    await user.click(screen.getByText("Home"));
+
+    expect(screen.getByTestId("header")).toBeDefined();
+  });
 });
