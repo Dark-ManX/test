@@ -10,7 +10,7 @@ describe("Header tests", () => {
 
     const links = screen.getAllByTestId("nav-item");
 
-    expect(links.length).toBe(2);
+    expect(links).toHaveLength(2);
   });
 
   it("check redirect to auth", async () => {
@@ -19,7 +19,7 @@ describe("Header tests", () => {
     const user = userEvent.setup();
     await user.click(screen.getByText("Auth"));
 
-    expect(screen.getByTestId("auth-form")).toBeDefined();
+    expect(screen.getByTestId("auth")).toBeDefined();
   });
 
   it("check redirect to /", async () => {
@@ -28,6 +28,6 @@ describe("Header tests", () => {
     const user = userEvent.setup();
     await user.click(screen.getByText("Home"));
 
-    expect(screen.getByTestId("header")).toBeDefined();
+    expect(screen.getByTestId("home")).toBeDefined();
   });
 });

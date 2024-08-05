@@ -1,4 +1,4 @@
-import { I_HeaderData, I_NavigationItem } from "@/shared/types";
+import { I_HeaderData } from "@/shared/types";
 import { Link } from "@tanstack/react-router";
 
 const Header = ({ data }: { data: I_HeaderData[] }) => {
@@ -7,9 +7,13 @@ const Header = ({ data }: { data: I_HeaderData[] }) => {
       <header className="w-full fixed top-0 left-0">
         <nav>
           <ul className="flex gap-10 justify-center">
-            {data.map((el: I_NavigationItem, idx: number) => (
-              <li key={idx} data-testid="nav-item">
-                <Link to={el.path} className="text-2xl [&.active]:text-white">
+            {data.map((el: I_HeaderData, idx: number) => (
+              <li key={idx}>
+                <Link
+                  to={el.path}
+                  data-testid={el.id}
+                  className="text-2xl [&.active]:text-white"
+                >
                   {el.title}
                 </Link>
               </li>

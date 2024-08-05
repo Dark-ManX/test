@@ -7,11 +7,6 @@ export interface I_Props {
   [x: string]: any;
 }
 
-export interface I_NavigationItem {
-  title: string;
-  path: string;
-}
-
 export interface I_User {
   email: string;
   password: string;
@@ -26,4 +21,5 @@ export interface I_Card {
 export interface I_HeaderData {
   title: string;
   path: string;
+  id: string;
 }
