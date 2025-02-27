@@ -8,7 +8,7 @@ import useSWR from "swr";
 import { JobsList } from "./JobsList";
 
 export const JobsContainer = () => {
-  const [value, setValue] = useState<string>("dev");
+  const [value, setValue] = useState<string>("");
   const [jobs, setJobs] = useState([]);
 
   const firstRender = useRef(true);
