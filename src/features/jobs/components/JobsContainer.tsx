@@ -1,6 +1,6 @@
 "use client";
 
-import { SyntheticEvent, useEffect, useState } from "react";
+import { SyntheticEvent, useEffect, useRef, useState } from "react";
 import { BASE_URL } from "@/configs/axios/default";
 import useSWR from "swr";
 import { JobsList } from "./JobsList";
@@ -11,14 +11,18 @@ export const JobsContainer = () => {
   const [value, setValue] = useState<string>("");
   const [jobs, setJobs] = useState([]);
 
+  const firstRender = useRef(true);
+
   const query = useDebounce(value, 500);
-  console.log(query);
 
   const {
     data: fetchedJobs,
     error,
     isLoading,
-  } = useSWR(query ? `${BASE_URL}/search?query=${query}` : null, fetcher);
+  } = useSWR(
+    `${BASE_URL}/search?query=${firstRender.current ? value : query}`,
+    fetcher
+  );
 
   const handleChange = (e: SyntheticEvent) => {
     const { value } = e.target as HTMLInputElement;
@@ -26,7 +30,8 @@ export const JobsContainer = () => {
   };
 
   useEffect(() => {
-    setValue(JSON.parse(localStorage.getItem("user") as string).desiredJob);
+    setValue(JSON.parse(localStorage.getItem("user") as string)?.desiredJob);
+    firstRender.current = false;
   }, []);
 
   useEffect(() => {

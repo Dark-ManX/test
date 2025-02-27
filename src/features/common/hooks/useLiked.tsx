@@ -23,11 +23,11 @@ export const useLiked = () => {
   }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined" && liked.length) {
+    if (typeof window !== "undefined" && liked?.length) {
       localStorage.setItem("likedJobs", JSON.stringify(liked));
     }
     //eslint-disable-next-line
-  }, [liked.length]);
+  }, [liked?.length]);
 
   return { liked, handleLiked };
 };
