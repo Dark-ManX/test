@@ -4,7 +4,7 @@ import { BASE_URL } from "@/configs/axios/default";
 import { fetcher } from "@/utils/fetcher";
 import { SyntheticEvent, useEffect, useRef, useState } from "react";
 import useSWR from "swr";
-import { useDebounce } from "../hooks/useDebounce";
+// import { useDebounce } from "../hooks/useDebounce";
 import { JobsList } from "./JobsList";
 
 export const JobsContainer = () => {
@@ -13,7 +13,7 @@ export const JobsContainer = () => {
 
   const firstRender = useRef(true);
 
-  const query = useDebounce(value, 500);
+  // const query = useDebounce(value, 500);
   const url = `${BASE_URL}/search?query=${value}`;
 
   const { data: fetchedJobs, error, isLoading } = useSWR(url, fetcher);
