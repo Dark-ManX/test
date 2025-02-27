@@ -46,7 +46,7 @@ export const JobsContainer = () => {
         className="border rounded-[6px] border-gray-600 p-2 min-w-[35%]"
       />
 
-      {isLoading ? <p>Loading</p> : <JobsList data={fetchedJobs.data} />}
+      {isLoading ? <p>Loading</p> : <JobsList data={jobs} />}
     </>
   );
 };
