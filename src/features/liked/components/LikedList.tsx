@@ -9,11 +9,11 @@ interface Props {
 export const LikedList = ({ list, handleLiked }: Props) => {
   return (
     <>
-      {!list.length ? (
+      {!list?.length ? (
         <p>There no jobs</p>
       ) : (
         <div className="grid grid-cols-4 gap-4 mt-4">
-          {list.map((el) => {
+          {list?.map((el) => {
             return (
               <JobCard
                 key={el.job_id}
