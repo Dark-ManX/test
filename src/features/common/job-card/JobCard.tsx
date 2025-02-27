@@ -52,7 +52,7 @@ export const JobCard = ({
 
       <div className="flex gap-2 w-full justify-center">
         <button onClick={() => handleLiked(data)}>
-          {!liked.find((el) => el.job_id === data.job_id)
+          {!liked?.find((el) => el.job_id === data.job_id)
             ? "Like"
             : "Remove from liked"}
         </button>
