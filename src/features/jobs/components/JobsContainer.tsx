@@ -17,7 +17,7 @@ export const JobsContainer = () => {
     data: fetchedJobs,
     error,
     isLoading,
-  } = useSWR(`${BASE_URL}/search?query=${query}`, fetcher);
+  } = useSWR(query ? `${BASE_URL}/search?query=${query}` : null, fetcher);
 
   const handleChange = (e: SyntheticEvent) => {
     const { value } = e.target as HTMLInputElement;
