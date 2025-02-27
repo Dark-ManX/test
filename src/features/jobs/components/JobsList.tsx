@@ -15,7 +15,7 @@ export const JobsList = ({ data }: Props) => {
         <p>There no jobs</p>
       ) : (
         <div className="grid grid-cols-4 gap-4 mt-4">
-          {data.map((el) => (
+          {data?.map((el) => (
             <JobCard
               key={el.job_id}
               data={el}
