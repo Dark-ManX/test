@@ -6,7 +6,7 @@ interface Props {
   data: Job[];
 }
 
-export const JobsList = ({ data }: Props) => {
+export const JobsList = ({ data = [] }: Props) => {
   const { liked, handleLiked } = useLiked();
 
   return (
