@@ -58,3 +58,7 @@ All data is saving to localStorage.
 /job-detail - implemented as modal window with detail to checked job
 
 /like - (Favorite) list of liked jobs
+
+## Custom hooks
+
+1. useLiked() - to create liked state. Return 2 parameters - {liked, handleLiked}. Liked - array of liked jobs. HandleLiked(job) - get object of type Job as argument and add or remove it from liked
