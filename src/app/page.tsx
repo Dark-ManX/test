@@ -1,11 +1,13 @@
-import styles from "./page.module.css";
+import Head from "next/head";
+import { redirect } from "next/navigation";
 
 export default function Home() {
+  redirect("auth/login");
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <p>Welcome to test app</p>
-      </main>
-    </div>
+    <>
+      <Head>
+        <p>Auth</p>
+      </Head>
+    </>
   );
 }
