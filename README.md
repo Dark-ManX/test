@@ -35,10 +35,26 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+## Instalation
+
+1. npm install
+2. npm start
+
 ## Live page
 
 ## Save data
 
 All data is saving to localStorage.
 
-## Steps to see capabilities
+## REST API
+
+{{base_url}}:
+/create - form that save user data to localStorage as field "user", type: {"name": string, "desiredJob": string, "about": string}
+
+/login - not implemented, only UI and that's all
+
+/jobs - input with opportunity to find job and list of fetched jobs
+
+/job-detail - implemented as modal window with detail to checked job
+
+/like - (Favorite) list of liked jobs
