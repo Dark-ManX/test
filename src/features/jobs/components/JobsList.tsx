@@ -11,7 +11,7 @@ export const JobsList = ({ data }: Props) => {
 
   return (
     <>
-      {!data.length ? (
+      {!data?.length ? (
         <p>There no jobs</p>
       ) : (
         <div className="grid grid-cols-4 gap-4 mt-4">

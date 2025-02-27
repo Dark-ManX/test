@@ -18,12 +18,12 @@ export const useLiked = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setLiked(JSON.parse(localStorage?.getItem("likedJobs") as string));
+      setLiked(JSON.parse(localStorage.getItem("likedJobs") as string));
     }
   }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== "undefined" && liked.length) {
       localStorage.setItem("likedJobs", JSON.stringify(liked));
     }
     //eslint-disable-next-line
