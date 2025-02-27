@@ -25,10 +25,6 @@ export const JobsContainer = () => {
   };
 
   useEffect(() => {
-    setJobs(JSON.parse(localStorage.getItem("user") as string).desiredJob);
-  }, []);
-
-  useEffect(() => {
     if (fetchedJobs) setJobs(fetchedJobs.data);
 
     if (error) console.log(error);
