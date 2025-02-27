@@ -12,6 +12,7 @@ export const JobsContainer = () => {
   const [jobs, setJobs] = useState([]);
 
   const query = useDebounce(value, 500);
+  console.log(query);
 
   const {
     data: fetchedJobs,

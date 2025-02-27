@@ -7,7 +7,6 @@ interface Props {
 }
 
 export const JobsList = ({ data }: Props) => {
-  console.log(data);
   const { liked, handleLiked } = useLiked();
 
   return (
@@ -17,13 +16,12 @@ export const JobsList = ({ data }: Props) => {
       ) : (
         <div className="grid grid-cols-4 gap-4 mt-4">
           {data?.map((el) => (
-            <>hello</>
-            // <JobCard
-            //   key={el.job_id}
-            //   data={el}
-            //   liked={liked}
-            //   handleLiked={handleLiked}
-            // />
+            <JobCard
+              key={el.job_id}
+              data={el}
+              liked={liked}
+              handleLiked={handleLiked}
+            />
           ))}
         </div>
       )}
