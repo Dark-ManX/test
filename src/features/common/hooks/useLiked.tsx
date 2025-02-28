@@ -10,10 +10,7 @@ export const useLiked = () => {
     setLiked((prev) => {
       const present = prev?.some((el) => el.job_id === data.job_id);
       if (present) {
-        const res = prev?.filter((item) => item.job_id !== data.job_id);
-        localStorage.setItem("likedJobs", JSON.stringify(res));
-
-        return res;
+        return prev?.filter((item) => item.job_id !== data.job_id);
       }
       return prev ? [...prev, data] : [data];
     });
@@ -26,7 +23,7 @@ export const useLiked = () => {
   }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined" && liked?.length) {
+    if (typeof window !== "undefined") {
       localStorage.setItem("likedJobs", JSON.stringify(liked));
     }
     //eslint-disable-next-line
