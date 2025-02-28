@@ -29,6 +29,7 @@ export const JobCard = ({
     job_country,
     job_description,
   } = data;
+
   return (
     <div className="border border-gray-200 rounded-xl p-3 pb-3 overflow-hidden">
       <div className="flex gap-2 w-full">

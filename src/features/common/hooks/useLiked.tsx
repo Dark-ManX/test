@@ -12,7 +12,7 @@ export const useLiked = () => {
       if (present) {
         return prev?.filter((item) => item.job_id !== data.job_id);
       }
-      return [...prev, data];
+      return prev ? [...prev, data] : [data];
     });
   };
 
