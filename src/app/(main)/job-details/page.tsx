@@ -1,4 +1,4 @@
-import { Modal } from "@/app/(main)/jobs/(..)job-details/modal";
+import { Modal } from "@/app/(main)/jobs/(..)job-details/[id]/modal";
 import { JobDetails } from "@/features/job-details";
 
 const Page = () => {

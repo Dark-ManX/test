@@ -58,7 +58,7 @@ export const JobCard = ({
             : "Remove from liked"}
         </button>
 
-        <Link href={`/job-details?job_id=${job_id}`}>Details</Link>
+        <Link href={`/job-details/${job_id}`}>Details</Link>
       </div>
     </div>
   );
