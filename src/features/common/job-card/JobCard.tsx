@@ -36,7 +36,7 @@ export const JobCard = ({
   const [isLiked, setIsLiked] = useState(true);
 
   useEffect(() => {
-    setIsLiked(!liked?.find((el) => el.job_id === data.job_id));
+    setIsLiked(!!liked?.find((el) => el.job_id === data.job_id));
   }, [liked?.length]);
 
   return (
