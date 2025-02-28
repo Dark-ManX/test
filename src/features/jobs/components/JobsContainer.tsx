@@ -4,17 +4,21 @@ import { BASE_URL } from "@/configs/axios/default";
 import { fetcher } from "@/utils/fetcher";
 import { SyntheticEvent, useEffect, useState } from "react";
 import useSWR from "swr";
-// import { useDebounce } from "../hooks/useDebounce";
+import { useDebounce } from "../hooks/useDebounce";
 import { JobsList } from "./JobsList";
 
 export const JobsContainer = () => {
   const [value, setValue] = useState<string>("");
   const [jobs, setJobs] = useState([]);
 
-  // const query = useDebounce(value, 500);
-  const url = `${BASE_URL}/search?query=${value}`;
+  const query = useDebounce(value, 500);
+  const url = `${BASE_URL}/search?query=${query}`;
 
-  const { data: fetchedJobs, error, isLoading } = useSWR(url, fetcher);
+  const {
+    data: fetchedJobs,
+    error,
+    isLoading,
+  } = useSWR(value ? url : null, fetcher);
 
   const handleChange = (e: SyntheticEvent) => {
     const { value } = e.target as HTMLInputElement;
@@ -23,6 +27,7 @@ export const JobsContainer = () => {
 
   useEffect(() => {
     setValue(JSON.parse(localStorage.getItem("user") as string)?.desiredJob);
+    if (fetchedJobs) setJobs(fetchedJobs.data);
   }, []);
 
   useEffect(() => {

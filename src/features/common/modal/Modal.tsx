@@ -15,10 +15,10 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
   return createPortal(
     <>
       <div
-        className="fixed w-full bg-black opacity-40 z-[100]"
-        onClick={onClose} // Close the modal if the background is clicked
+        className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-[100]"
+        onClick={onClose}
       />
-      <div className="fixed top-1/4 left-[50%] translate-x-[-50%] bg-white p-6 rounded-lg z-[101]">
+      <div className="fixed top-[20%] left-[50%] translate-x-[-50%] w-[65%] h-[60%] bg-white p-10 rounded-lg z-[101] overflow-y-scroll">
         <button onClick={onClose} className="absolute top-2 right-2">
           Close
         </button>
