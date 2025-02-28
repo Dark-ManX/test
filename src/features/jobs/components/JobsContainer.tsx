@@ -2,7 +2,7 @@
 
 import { BASE_URL } from "@/configs/axios/default";
 import { fetcher } from "@/utils/fetcher";
-import { SyntheticEvent, useEffect, useRef, useState } from "react";
+import { SyntheticEvent, useEffect, useState } from "react";
 import useSWR from "swr";
 // import { useDebounce } from "../hooks/useDebounce";
 import { JobsList } from "./JobsList";
