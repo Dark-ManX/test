@@ -1,5 +1,8 @@
+"use client";
+
 import { Job } from "@/features/jobs/types";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 interface Props {
   size?: "small" | "large";
@@ -30,6 +33,12 @@ export const JobCard = ({
     job_description,
   } = data;
 
+  const [isLiked, setIsLiked] = useState(false);
+
+  useEffect(() => {
+    setIsLiked(!liked?.find((el) => el.job_id === data.job_id));
+  }, [liked.length]);
+
   return (
     <div className="border border-gray-200 rounded-xl p-3 pb-3 overflow-hidden">
       <div className="flex gap-2 w-full">
@@ -53,9 +62,7 @@ export const JobCard = ({
 
       <div className="flex gap-2 w-full justify-center">
         <button onClick={() => handleLiked(data)}>
-          {!liked?.find((el) => el.job_id === data.job_id)
-            ? "Like"
-            : "Remove from liked"}
+          {!isLiked ? "Like" : "Remove from liked"}
         </button>
 
         <Link href={`/job-details/${job_id}`}>Details</Link>
