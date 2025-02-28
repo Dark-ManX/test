@@ -11,8 +11,6 @@ export const JobsContainer = () => {
   const [value, setValue] = useState<string>("");
   const [jobs, setJobs] = useState([]);
 
-  const firstRender = useRef(true);
-
   // const query = useDebounce(value, 500);
   const url = `${BASE_URL}/search?query=${value}`;
 
@@ -25,7 +23,6 @@ export const JobsContainer = () => {
 
   useEffect(() => {
     setValue(JSON.parse(localStorage.getItem("user") as string)?.desiredJob);
-    firstRender.current = false;
   }, []);
 
   useEffect(() => {
