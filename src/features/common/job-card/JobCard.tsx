@@ -35,7 +35,7 @@ export const JobCard = ({
       <div className="flex gap-2 w-full">
         {/* eslint-disable-next-line */}
         <img
-          src={employer_logo || "imgs/default-img.jpg"}
+          src={employer_logo || "/imgs/default-img.jpg"}
           alt={employer_name}
           width={100}
           height={100}
