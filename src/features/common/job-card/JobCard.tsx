@@ -37,7 +37,7 @@ export const JobCard = ({
 
   useEffect(() => {
     setIsLiked(!liked?.find((el) => el.job_id === data.job_id));
-  }, [liked.length]);
+  }, [liked?.length]);
 
   return (
     <div className="border border-gray-200 rounded-xl p-3 pb-3 overflow-hidden">
