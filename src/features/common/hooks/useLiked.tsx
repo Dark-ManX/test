@@ -10,7 +10,7 @@ export const useLiked = () => {
     setLiked((prev) => {
       const present = prev?.some((el) => el.job_id === data.job_id);
       if (present) {
-        return prev.filter((item) => item.job_id !== data.job_id);
+        return prev?.filter((item) => item.job_id !== data.job_id);
       }
       return [...prev, data];
     });
