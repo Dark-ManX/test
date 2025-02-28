@@ -1,11 +1,14 @@
-import { Modal } from "@/app/(main)/jobs/(..)job-details/[id]/modal";
 import { JobDetails } from "@/features/job-details";
+import Head from "next/head";
 
 const Page = () => {
   return (
-    <Modal>
+    <>
+      <Head>
+        <p>Job details</p>
+      </Head>
       <JobDetails />
-    </Modal>
+    </>
   );
 };
 
