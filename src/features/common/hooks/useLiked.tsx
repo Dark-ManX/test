@@ -27,7 +27,6 @@ export const useLiked = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined" && liked?.length) {
-      console.log("object");
       localStorage.setItem("likedJobs", JSON.stringify(liked));
     }
     //eslint-disable-next-line
