@@ -37,7 +37,7 @@ export const TableComponent = () => {
   const [editData, setEditData] = useState<Meme | null>(null);
   const [inputValue, setInputValue] = useState<string>("");
 
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
 
   const handleEdit = async (id: number) => {
     try {
@@ -69,6 +69,8 @@ export const TableComponent = () => {
         id: editData?.id,
         data: { properties: editData?.properties },
       });
+
+      onClose();
     } catch (e) {
       if (e instanceof Error) {
         throw new Error(e.message);
@@ -177,7 +179,7 @@ export const TableComponent = () => {
                   <Input
                     value={inputValue}
                     variant="bordered"
-                    placeholder="Input property"
+                    placeholder="Input and press enter"
                     startContent={
                       <div className="flex flex-wrap gap-2 items-center max-w-full">
                         {editData &&

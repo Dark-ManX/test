@@ -15,6 +15,7 @@ export const memesApi = createApi({
   endpoints: (build) => ({
     getMemes: build.query({
       query: () => apiPath.memes.getAll,
+      providesTags: ["memes"],
     }),
     getMeme: build.query({
       query: ({ id }) => ({
