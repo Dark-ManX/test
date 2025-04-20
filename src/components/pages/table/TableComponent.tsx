@@ -198,12 +198,11 @@ export const TableComponent = () => {
                       </div>
                     }
                     onChange={handlePropertiesChange}
-                    onKeyUp={handleKeyUp} //eslint-disable-line
+                    onKeyUp={handleKeyUp}
                     classNames={{
                       base: "border p-2 gap-2",
                       input: "p-2 border",
                     }}
-                    // className="max-w-[500px] border-gray-700 border gap-4 flex-wrap"
                   />
                 </ModalBody>
                 <ModalFooter>
