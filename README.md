@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Test Task
 
-## Getting Started
+This project is a frontend application built with Next.js 15 using React 19, Redux Toolkit, Tailwind CSS, and HeroUI components for creating the UI.
 
-First, run the development server:
+📦 Tech Stack
+Next.js 15
 
-```bash
+React 19
+
+Redux Toolkit
+
+Tailwind CSS 4
+
+HeroUI (buttons, tables, modals, and more)
+
+Framer Motion — for animations
+
+TypeScript
+
+ESLint — for linting
+
+🚀 Scripts
+
+Script Command Description
+dev npm run dev Run the development server
+build npm run build Build the application
+start npm run start Start the production server
+lint npm run lint Run ESLint to check for issues
+🛠️ Setup & Run
+Clone the repository:
+
+bash
+git clone <url>
+cd test-task
+Install dependencies:
+
+bash
+npm install
+Run the development server:
+
+bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🧩 Suggested Project Structure
+csharp
+.
+├── components/ # UI components
+├── pages/ # Next.js pages
+├── public/ # Static assets
+├── styles/ # Global styles
+├── store/ # Redux
+├── types/ # TypeScript types
+├── utils/ # Utility functions
+├── .eslintrc.js # ESLint config
+├── tailwind.config.js # TailwindCSS config
+├── tsconfig.json # TypeScript config
+└── ...
+🌈 HeroUI
+This project uses HeroUI components:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+@heroui/button, @heroui/modal, @heroui/input, etc.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Makes it easy to build beautiful, responsive interfaces
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Documentation available at 👉 heroui.dev
 
-## Learn More
+🧪 Linting
+To run the linter:
 
-To learn more about Next.js, take a look at the following resources:
+bash
+npm run lint
+Uses eslint-config-next and @eslint/eslintrc.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📦 Deployment
+The app can be deployed to any platform that supports Next.js, such as:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Vercel
 
-## Deploy on Vercel
+Railway
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Render
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Netlify (with some adjustments)
